@@ -1,0 +1,58 @@
+.section-top {
+   height: 100vh;
+   min-height: 600px;
+   background: #0e1419 url(../css/bacfon.jpg) no-repeat center;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   color: #ffffff;
+   align-items: center;
+   text-align: center;
+   position: relative;
+   padding: 170px 0 100;
+}
+
+.section-top::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0, 0.5);
+   width: 100%;
+   height: 100%;
+}
+.section-top__container {
+   position: relative;
+   width: 520px;
+}
+.section-top__info {
+   font-size: 24px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 900;
+   color: #fcff00;
+   margin: 0;
+}
+.section-top__title {
+   font-family: "Montserrat", sans-serif;
+   font-size: 55px;
+   font-weight: 900;
+   margin: 0 0 35px;
+}
+@media (max-width: 992px) {
+}
+
+@media (max-width: 576px) {
+   .section-top__info {
+      font-size: 18px;
+   }
+   .section-top__title {
+      font-size: 30px;
+   }
+}
+
+@media (max-width: 360px) {
+   .section-top__title {
+      font-size: 34px;
+      padding: 20px 0;
+   }
+}
